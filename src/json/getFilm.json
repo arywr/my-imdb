@@ -1,0 +1,202 @@
+{
+    "film": [
+        {
+            "id": "tt1375666",
+            "title": "Inception",
+            "year": "2010",
+            "length": "2h 28min",
+            "rating": "8.8",
+            "rating_votes": "1909950",
+            "poster": "/images/cover-inspection.jpg",
+            "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolorum modi perspiciatis recusandae eum quidem iusto laudantium. Vel, aliquam molestiae.",
+            "trailer": {
+                "id": "vi4219471385",
+                "link": "https://www.imdb.com/videoplayer/vi4219471385"
+            },
+            "cast": [
+                {
+                    "actor":"Leonardo DiCaprio",
+                    "actor_id":"nm0000138",
+                    "character":"Cobb"
+                },
+                {
+                    "actor":"Joseph Gordon-Levitt",
+                    "actor_id":"nm0330687",
+                    "character":"Arthur"
+                },
+                {
+                    "actor":"Ellen Page",
+                    "actor_id":"nm0680983",
+                    "character":"Ariadne"
+                },
+                {
+                    "actor":"Tom Hardy",
+                    "actor_id":"nm0362766",
+                    "character":"Eames"
+                },
+                {
+                    "actor":"Ken Watanabe",
+                    "actor_id":"nm0913822",
+                    "character":"Saito"
+                },
+                {
+                    "actor":"Dileep Rao",
+                    "actor_id":"nm2438307",
+                    "character":"Yusuf"
+                },
+                {
+                    "actor":"Cillian Murphy",
+                    "actor_id":"nm0614165",
+                    "character":"Robert Fischer"
+                },
+                {
+                    "actor":"Tom Berenger",
+                    "actor_id":"nm0000297",
+                    "character":"Browning"
+                },
+                {
+                    "actor":"Marion Cotillard",
+                    "actor_id":"nm0182839",
+                    "character":"Mal"
+                },
+                {
+                    "actor":"Pete Postlethwaite",
+                    "actor_id":"nm0000592",
+                    "character":"Maurice Fischer"
+                }
+            ]
+        },
+        {
+            "id": "tt1375666",
+            "title": "Not Inception",
+            "year": "2010",
+            "length": "2h 28min",
+            "rating": "8.8",
+            "rating_votes": "1909950",
+            "poster": "images/cover-inspection.jpg",
+            "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolorum modi perspiciatis recusandae eum quidem iusto laudantium. Vel, aliquam molestiae.",
+            "trailer": {
+                "id": "vi4219471385",
+                "link": "https://www.imdb.com/videoplayer/vi4219471385"
+            },
+            "cast": [
+                {
+                    "actor":"Leonardo DiCaprio",
+                    "actor_id":"nm0000138",
+                    "character":"Cobb"
+                },
+                {
+                    "actor":"Joseph Gordon-Levitt",
+                    "actor_id":"nm0330687",
+                    "character":"Arthur"
+                },
+                {
+                    "actor":"Ellen Page",
+                    "actor_id":"nm0680983",
+                    "character":"Ariadne"
+                },
+                {
+                    "actor":"Tom Hardy",
+                    "actor_id":"nm0362766",
+                    "character":"Eames"
+                },
+                {
+                    "actor":"Ken Watanabe",
+                    "actor_id":"nm0913822",
+                    "character":"Saito"
+                },
+                {
+                    "actor":"Dileep Rao",
+                    "actor_id":"nm2438307",
+                    "character":"Yusuf"
+                },
+                {
+                    "actor":"Cillian Murphy",
+                    "actor_id":"nm0614165",
+                    "character":"Robert Fischer"
+                },
+                {
+                    "actor":"Tom Berenger",
+                    "actor_id":"nm0000297",
+                    "character":"Browning"
+                },
+                {
+                    "actor":"Marion Cotillard",
+                    "actor_id":"nm0182839",
+                    "character":"Mal"
+                },
+                {
+                    "actor":"Pete Postlethwaite",
+                    "actor_id":"nm0000592",
+                    "character":"Maurice Fischer"
+                }
+            ]
+        },
+        {
+            "id": "tt1375666",
+            "title": "Avengers",
+            "year": "2010",
+            "length": "2h 28min",
+            "rating": "8.8",
+            "rating_votes": "1909950",
+            "poster": "images/cover-inspection.jpg",
+            "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolorum modi perspiciatis recusandae eum quidem iusto laudantium. Vel, aliquam molestiae.",
+            "trailer": {
+                "id": "vi4219471385",
+                "link": "https://www.imdb.com/videoplayer/vi4219471385"
+            },
+            "cast": [
+                {
+                    "actor":"Leonardo DiCaprio",
+                    "actor_id":"nm0000138",
+                    "character":"Cobb"
+                },
+                {
+                    "actor":"Joseph Gordon-Levitt",
+                    "actor_id":"nm0330687",
+                    "character":"Arthur"
+                },
+                {
+                    "actor":"Ellen Page",
+                    "actor_id":"nm0680983",
+                    "character":"Ariadne"
+                },
+                {
+                    "actor":"Tom Hardy",
+                    "actor_id":"nm0362766",
+                    "character":"Eames"
+                },
+                {
+                    "actor":"Ken Watanabe",
+                    "actor_id":"nm0913822",
+                    "character":"Saito"
+                },
+                {
+                    "actor":"Dileep Rao",
+                    "actor_id":"nm2438307",
+                    "character":"Yusuf"
+                },
+                {
+                    "actor":"Cillian Murphy",
+                    "actor_id":"nm0614165",
+                    "character":"Robert Fischer"
+                },
+                {
+                    "actor":"Tom Berenger",
+                    "actor_id":"nm0000297",
+                    "character":"Browning"
+                },
+                {
+                    "actor":"Marion Cotillard",
+                    "actor_id":"nm0182839",
+                    "character":"Mal"
+                },
+                {
+                    "actor":"Pete Postlethwaite",
+                    "actor_id":"nm0000592",
+                    "character":"Maurice Fischer"
+                }
+            ]
+        }
+    ]
+}

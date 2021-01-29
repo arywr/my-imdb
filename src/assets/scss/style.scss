@@ -1,0 +1,226 @@
+/*!
+ * Bootstrap v4.5.3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "toasts";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "spinners";
+@import "utilities";
+@import "print";
+@import "fonts";
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #0F1837;
+}
+
+header {
+    padding-top: 20px;
+    width: 100%;
+    position: relative;
+
+    .navbar {
+        height: 80px;
+
+        ul.navbar-nav {
+            li.nav-item {
+                &.active {
+                    a.nav-link {
+                        color: $primary;
+                        font-weight: $font-weight-normal;
+                    }
+                }
+
+                a {
+                    &.nav-link {
+                        // color: $gray-900;
+                        padding: 0 1rem;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.brand-text-icon {
+    font-size: 26px;
+    font-weight: 500;
+    color: $primary;
+
+    .text-purple {
+        color: $purple;
+    }
+
+    &:hover {
+        color: $primary;
+        text-decoration: none;
+    }
+}
+
+.section-hero {
+    .hero-title {
+        margin-top: 70px;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 65px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #FFF;
+    }
+
+    .hero-description {
+        margin-top: 10px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #9094A2;
+    }
+}
+
+.section-search-film {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    .hero-search-box {
+        .search-box {
+            padding: 20px;
+            max-width: 700px;
+            border-radius: 6px;
+            background-color: #fff;
+            display: flex;
+
+            .btn-search {
+                height: 70px;
+                color: #132039;
+                font-weight: 500;
+            }
+        }
+
+        .search-list-container {
+            border-radius: 6px;
+            max-width: 700px;
+            background-color: #fff;
+            
+            .option {
+                padding: 10px;
+                display: flex;
+
+                img {
+                    max-width: 70px;
+                }
+            }
+        }
+    }
+}
+
+.section-detail-film {
+    color: #fff;
+    margin-bottom: 60px;
+
+    .detail-title {
+        margin-top: 30px;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 54px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .detail-description {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #fff;
+        opacity: .5;
+    }
+}
+
+.section-film-details {
+    .container {
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .film-descriptions {
+        color: #fff;
+
+        h4 {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: left;
+        }
+
+        p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 27px;
+            letter-spacing: 0em;
+            text-align: left;
+            opacity: .5;
+        }
+    }
+}
+
+.section-footer {    
+    .footer-wrapper {
+        padding: 50px 0;
+        color: #9094A2;
+
+        .brand-text-icon {
+            font-size: 18px;
+        }
+    }
+}
