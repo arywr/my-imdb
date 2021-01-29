@@ -6,35 +6,54 @@ import PageDetailsTitle from 'parts/PageDetailsTitle'
 import Data from 'json/getFilm'
 import FilmDetails from 'parts/FilmDetails'
 
-import { fetchFilm } from 'store/actions/searchFilm'
+import { getFilm } from 'store/actions/searchFilm'
 import Footer from 'parts/Footer'
 
 class DetailPage extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            isLoaded: false
+        }
     }
 
-    componentDidMount() {
-        window.title = "Film.co | Details"
+    async componentDidMount() {
+        document.title = "Film.co | Details"
         window.scrollTo(0,0)
 
-        this.props.fetchFilm(this.props.title)
+        await this.props.getFilm(this.props.location.state.id, "DetailFilm")
+        this.setState({isLoaded: true})
     }
 
     render() {
+        const { page } = this.props
+
         return (
             <>
-                <Header {...this.props} />
-                <PageDetailsTitle {...this.props} />
-                <FilmDetails data={Data.film[0]} />
-                <Footer />
+            {
+                this.state.isLoaded 
+                ?
+                    <>
+                        <Header {...this.props} />
+                        <PageDetailsTitle data={page} />
+                        <FilmDetails data={page} />
+                        <Footer />
+                    </> 
+                : 
+                    <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+                        <div className="spinner-border text-primary" role="status" style={{ width: "8rem", height: "8rem" }}>
+                            <span className="sr-only">Loading...</span>
+                        </div>
+                    </div>
+            }
+                
             </>
         )
     }
 }
 
 const mapStateToProps = state => ({
-    // title: state.searchFilm.title ? state.searchFilm.title : null
+    page: state.searchFilm.DetailFilm
 })
 
-export default connect(mapStateToProps, { fetchFilm })(DetailPage)
+export default connect(mapStateToProps, { getFilm })(DetailPage)

@@ -4,7 +4,7 @@ import FilmDescription from 'parts/FilmDescriptions'
 
 export default function FilmDetails({data}) {
     return (
-        <main className="section-film-details">
+        <main className="section-film-details" style={{minHeight: "100vh"}}>
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-lg-6">

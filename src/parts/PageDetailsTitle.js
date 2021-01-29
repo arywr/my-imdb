@@ -7,8 +7,8 @@ export default function PageDetailsTitle({data}) {
             <Fade bottom>
                 <div className="row align-items-center">
                     <div className="col text-center">
-                        <h2 className="detail-title">Inspection</h2>
-                        <span className="detail-description">Adventure, Drama</span>
+                        <h2 className="detail-title">{data.title}</h2>
+                        <span className="detail-description">{data.year}</span>
                     </div>
                 </div>
             </Fade>

@@ -10,7 +10,8 @@ class SearchFilm extends Component {
         this.state = {
             itemFilm: {
                 display: false,
-                listOptionFilm: []
+                title: this.props.data.title,
+                id: "",
             }
         }
     }
@@ -25,16 +26,31 @@ class SearchFilm extends Component {
         })
     }
 
-    searchFilm = () => {
-        this.props.history.push("/detail-film/214792")
+    setValue = (id, title) => {
+        this.setState({
+            ...this.state,
+            itemFilm: {
+                ...this.state.itemFilm,
+                display: false,
+                title: title,
+                id: id
+            }
+        })
+        const { data } = this.props
+        data.title = title
     }
 
+    searchFilm = () => {
+        const { id } = this.state.itemFilm
+        this.props.history.push({
+            pathname: `/detail-film/${id}`,
+            state: { id: id }
+        })
+    }
 
     render() {
         const { data, listFilm } = this.props
         const { itemFilm } = this.state
-
-        console.log(listFilm)
 
         return (
             <Fade bottom delay={800}>
@@ -60,27 +76,34 @@ class SearchFilm extends Component {
                                 isPrimary 
                                 className="btn-search px-4" 
                                 onClick={this.searchFilm}
-                                isDisabled={!data.title ? true : false}
+                                isDisabled={!itemFilm.id ? true : false}
                             >
                                 Search
                             </Button>
                         </div>
                         {
-                            itemFilm.display && 
-                            
+                            itemFilm.display &&
                                 <div className="search-list-container mt-3 mx-auto">
-                                    {itemFilm.listOptionFilm.length < 1 
+                                    {listFilm.length < 1 || data.title === ""
                                         ?
                                             <div className="option py-4">
-                                                <span className="w-100 text-center">
+                                                <span className="d-block text-center">
                                                     No Options Selected
                                                 </span>
                                             </div>
                                         :
                                         <div className="option">
-                                            <span className="w-100 text-center">
-                                                Should Show Film List when User Write Text
-                                            </span>
+                                            {listFilm.map((items, index) => {
+                                                return (
+                                                    <div className="option-film-item d-block p-2" 
+                                                        key={index}
+                                                        onClick={() => this.setValue(items.id, items.title)}
+                                                    >
+                                                        <img src={items.image} alt={items.title} />
+                                                        <span className="ml-2">{items.title}</span>
+                                                    </div>
+                                                )
+                                            })}
                                         </div>
                                     }
                                 </div>

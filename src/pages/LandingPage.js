@@ -14,13 +14,12 @@ class LandingPage extends Component {
             data: {
                 listFilm: [],
                 title: "",
-                id: ""
             }
         }
     }
 
     componentDidMount() {
-        window.title = "Film.co | Home"
+        document.title = "Film.co | Home"
         window.scrollTo(0, 0)
     }
 
@@ -31,11 +30,11 @@ class LandingPage extends Component {
                 ...this.state.data,
                 [event.target.name]: event.target.value
             }
+        }, () => {
+            const state = this.state
+            if(state.data.title !== "")
+            this.props.fetchFilm(state.data.title, "listFilm")
         })
-
-        const state = this.state
-        if(state.data.title !== "")
-        this.props.fetchFilm(state.data.title, "listFilm")
     }
 
     render() {
@@ -46,7 +45,7 @@ class LandingPage extends Component {
             <>
                 <Header {...this.props} />
                 <Hero {...this.props} />
-                <SearchFilm data={data} onChange={this.onChange} listFilm={page.listFilm} />
+                <SearchFilm data={data} onChange={this.onChange} listFilm={page} />
                 <Footer />
             </>
         )
@@ -54,7 +53,7 @@ class LandingPage extends Component {
 }
 
 const mapStateToProps = state => ({
-    page: state.searchFilm ? state.searchFilm : null
+    page: state.searchFilm.listFilm ? state.searchFilm.listFilm : []
 })
 
 export default connect(mapStateToProps, { fetchFilm })(LandingPage)
